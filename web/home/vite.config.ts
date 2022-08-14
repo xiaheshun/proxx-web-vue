@@ -1,7 +1,13 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()]
+  plugins: [vue()],
+  server: {
+    hmr: true, // 热更新
+    open: true, // 浏览器自动打开主页
+    host: '0.0.0.0',
+    port: 5287,
+    https: false
+  }
 })
