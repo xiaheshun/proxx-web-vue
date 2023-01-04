@@ -1,5 +1,0 @@
-packages:
-  - packages/*
-  - web/admin
-  - web/home
-  - web/sso
